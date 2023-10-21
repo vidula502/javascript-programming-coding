@@ -16,18 +16,18 @@ const parentArray = ["Vijaysinh", "Ashwaini", "Vijayrao", "Varsha"];
 
 const score = [1, 2, 3, 4, 8, 0, 3, [3, 4, 8, 7, [2, 6, 7, 9, [7, 9]]]];
 
-console.log(score.flat(Infinity));  //[1, 2, 3, 4, 8, 0, 3, 3, 4, 8, 7, 2, 6, 7, 9, 7, 9]
+// console.log(score.flat(Infinity));  //[1, 2, 3, 4, 8, 0, 3, 3, 4, 8, 7, 2, 6, 7, 9, 7, 9]
+console.log(Array.isArray("Vidula")); //false
 
-console.log(Array.isArray("Vidula"));
-
-console.log(Array.from("Vidula"));
+console.log(Array.from("Vidula")); //[ 'V', 'i', 'd', 'u', 'l', 'a' ]
 
 console.log(Array.from({name : "Vidula"}));
 
-let score1 = 100;
-let score2 = 200;
-let score3 = 300;
+// let score1 = 100;
+// let score2 = 200; 
+// let score3 = 300;
 
-console.log(Array.of(score1,score2,score3)); //[ 100, 200, 300 ]
+// console.log(Array.of(score1,score2,score3)); //[ 100, 200, 300 ]
 
 
+console.log(Array.from("Amar"));
