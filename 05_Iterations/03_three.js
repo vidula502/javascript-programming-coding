@@ -1,23 +1,40 @@
-const map = new Map();
-map.set("name", "John");
-map.set("age", 30);
-map.set("city", "New York");
-map.set("country", "USA");
-map.set("salary", 100000);
-map.set("job", "Software Engineer");
+// for of
+
+// ["", "", ""]
+// [{}, {}, {}]
+
+const arr = [1, 2, 3, 4, 5]
+
+for (const num of arr) {
+    //console.log(num);
+}
+
+const greetings = "Hello world!"
+for (const greet of greetings) {
+    //console.log(`Each char is ${greet}`)
+}
+
+// Maps
+
+const map = new Map()
+map.set('IN', "India")
+map.set('USA', "United States of America")
+map.set('Fr', "France")
+map.set('IN', "India")
+
+
+// console.log(map);
 
 for (const [key, value] of map) {
-   // console.log(`${key}: ${value}`);
+    // console.log(key, ':-', value);
 }
 
-const person = {
-    name: "John",
-    age: 30,
-    city: "New York",
-    country: "USA",
-    salary: 100000,
-};
-
-for (const key in person) {
-    console.log(`${key}: ${person[key]}`);
+const myObject = {
+    game1: 'NFS',
+    game2: 'Spiderman'
 }
+
+// for (const [key, value] of myObject) {
+//     console.log(key, ':-', value);
+    
+// }
